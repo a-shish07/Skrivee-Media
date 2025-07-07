@@ -1,0 +1,86 @@
+.user-directory {
+  min-height: 100vh;
+  background: var(--background);
+  padding: 2rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.user-directory__header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.user-directory__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-color-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.user-directory__subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-directory__controls {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-directory__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-directory__footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .user-directory {
+    padding: 1rem 0.75rem;
+  }
+  
+  .user-directory__header {
+    margin-bottom: 2rem;
+  }
+  
+  .user-directory__title {
+    font-size: 2rem;
+  }
+  
+  .user-directory__subtitle {
+    font-size: 1rem;
+  }
+  
+  .user-directory__controls {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-directory__title {
+    font-size: 1.75rem;
+  }
+  
+  .user-directory__subtitle {
+    font-size: 0.95rem;
+  }
+}

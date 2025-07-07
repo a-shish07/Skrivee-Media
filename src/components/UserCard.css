@@ -1,0 +1,80 @@
+.user-card {
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.user-card__image-container {
+  margin-bottom: 1rem;
+}
+
+.user-card__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.user-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-card__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.user-card__email {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.75rem 0;
+  word-break: break-word;
+}
+
+.user-card__country {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.user-card__country-icon {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    padding: 1rem;
+  }
+  
+  .user-card__image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .user-card__name {
+    font-size: 1.1rem;
+  }
+}
